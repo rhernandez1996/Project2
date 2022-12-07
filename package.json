@@ -1,0 +1,48 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "project2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon ./js/start.js",
+    "mongoCloud": "nodemon ./routes/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhernandez1996/Project2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhernandez1996/Project2/issues"
+  },
+  "homepage": "https://github.com/rhernandez1996/Project2#readme",
+  "dependencies": {
+    "@vue/cli": "^5.0.8",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "connect-ensure-login": "^0.1.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "http-auth": "^4.2.0",
+    "mdb-ui-kit": "^6.0.1",
+    "mongodb": "^4.12.1",
+    "mongoose": "^6.8.0",
+    "morgan": "^1.10.0",
+    "node": "^19.2.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^7.1.2",
+    "pug": "^3.0.2",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
