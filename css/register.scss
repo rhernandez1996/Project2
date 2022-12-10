@@ -1,0 +1,59 @@
+// Add variables here
+$color-primary: #800000;
+$color-secondary:#a7f707;
+$body-font: "Open Sans", sans-serif;
+$header-font: "Lobster", cursive;
+
+
+//header for pages
+header {
+  width: 100%;
+  min-height: 500px;
+  padding-top: 3em;
+}
+.main-header {
+  background-color: $color-primary;
+  font-family: $header-font;
+  width: 100%;
+  margin: 2em auto 0 auto;
+  min-height: 100px;
+  height: 50px;
+  float: left;
+}
+.main-header .logo img {
+  width: 100px;
+  height: 100px;
+  margin: 0 2em 0 0;
+  float: left;
+}
+/* navigation*/
+.main-header .main-menu {
+  float: left;
+}
+
+.main-menu ul li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 1px solid rgba(202,204,202,0.6);
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  color: $color-secondary;
+}
+.main-menu ul li a:hover {
+  color: black;
+}
+.main-menu ul li.active {
+  background: black;
+  border: none;
+}
+.main-menu ul li.active a {
+  color: $color-secondary;
+}
+//end of header for pages
