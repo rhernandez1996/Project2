@@ -50,9 +50,11 @@ header {
     position: relative;
   }
   #text {
-    position: absolute;
-    display: flex;
-    justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   }
 
 .site-footer {
