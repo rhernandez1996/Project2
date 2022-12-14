@@ -45,21 +45,3 @@ header {
 
 .main-menu ul li.active a {
   color: #a7f707; }
-
-#head {
-  position: relative;
-  margin-top: -400px; }
-
-#text {
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.site-footer {
-  background-image: linear-gradient(#800000, #a7f707);
-  color: aliceblue;
-  padding: 20px 0;
-  margin-top: 10px;
-  text-align: center; }
