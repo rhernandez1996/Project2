@@ -4,12 +4,22 @@
         <title>Recipes</title>
         <!-- add link here -->
         <link rel="stylesheet" href="css/recipes.css">
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        
+         
+    
     </head>
+
     <body id="home">
         <header id="header">
             <div class="main-header">
                 <div class="logo">
-                    <img src="images/recipes-logo.png" alt="Pet Adoption" width="125">
+                    <img src="images/recipes-logo.png" alt="Recipes" width="125">
                 </div>
                 <nav class="main-menu">
                     <ul>
@@ -21,9 +31,139 @@
                 </nav>
             </div>
         </header>
-  </div>
-        <footer class="site-footer">
-            This is the site footer.
-        </footer>
+    <body>
+        
+        <div id="container">
 
+    
+            <main>
+                                
+                <section id="blogposts">
+    
+                
+                    <div class="post">
+                        <img v-on:click="isHidden1=false" src='images/Broccoli-Pesto-Pasta.webp' alt="" style="cursor: pointer;">
+                        <span class="food">{{ post1.food }}</span> — 
+                        <span class="difficulty"> {{ post1.difficulty }} </span>
+                        <span class="cooktime">- Total time: 35 mins </span>
+                        <p>{{ post1.message }} </p>
+                    </div>
+                    <div v-if="!isHidden1" style="width: 30%; height: 70%; background-color: black; 
+                                                 border-radius: 15px; position: absolute; margin-left: 20%;
+                                                 margin-top: -200px;">
+                        <p v-on:click="isHidden1=true" style="text-align: right; cursor: pointer; color: white; margin-right: 10px;">x</p>
+                        <h3 style="color: white; margin-left: 20px; margin-right: 15px;">{{ post1.food }}</h3>
+                        <h4 style="color: white; display: inline-block; margin-left: 20px; margin-right: 15px;">Ingredients: </h4>
+                        <span style="color: white; ">{{ post1.foodie }}</span>
+                        <h4 style="color: white; margin-left: 20px; margin-right: 15px;">Prep Instructions: </h4>
+                        <p style="color: white; margin-left: 20px; margin-right: 15px;">{{ post1.bio }}</p><br>
+                        <button v-on:click="isHidden1=true" style="margin-bottom: 20px; margin-left: 20px; cursor: pointer;">Close</button>
+                    </div>
+    
+                    <div class="post">
+                        <img v-on:click="isHidden2=false" src='images/avocado.jpg' alt="" style="cursor: pointer;">
+                        <span class="food">{{ post2.food }}</span> — 
+                        <span class="difficulty"> {{ post2.difficulty }}</span>
+                        <span class="cooktime">- Total time: 25 mins</span>
+                        <p> {{ post2.message }} </p>
+                    </div>
+                    <div v-if="!isHidden2" style="width: 30%; height: 70%; background-color: black; 
+                                                 border-radius: 15px; position: absolute; margin-left: 20%;
+                                                 margin-top: -200px;">
+                        <p v-on:click="isHidden2=true" style="text-align: right; cursor: pointer; color: white; margin-right: 10px;">x</p>
+                        <h3 style="color: white; margin-left: 20px; margin-right: 15px;">{{ post2.food }}</h3>
+                        <h4 style="color: white; display: inline-block; margin-left: 20px; margin-right: 15px;">Ingredients: </h4>
+                        <span style="color: white; ">{{ post2.foodie }}</span>
+                        <h4 style="color: white; margin-left: 20px; margin-right: 15px;">Prep Instructions: </h4>
+                        <p style="color: white; margin-left: 20px; margin-right: 15px;">{{ post2.bio }}</p><br>
+                        <button v-on:click="isHidden2=true" style="margin-bottom: 20px; margin-left: 20px; cursor: pointer">Close</button>
+                    </div>
+    
+                    <div class="post">
+                        <img v-on:click="isHidden3=false" src='images/Bacon.jpg' alt="" style="cursor: pointer;">
+                        <span class="food">{{ post3.food }}</span> — 
+                        <span class="difficulty">{{ post3.difficulty }}</span>
+                        <span class="cooktime">- Total time: 50 mins</span>
+                        <p> {{ post3.message }} </p>
+                    </div>
+                    <div v-if="!isHidden3" style="width: 30%; height: 70%; background-color: black; 
+                                                 border-radius: 15px; position: absolute; margin-left: 20%;
+                                                 margin-top: -200px;">
+                        <p v-on:click="isHidden3=true" style="text-align: right; cursor: pointer; color: white; margin-right: 10px;">x</p>
+                        <h3 style="color: white; margin-left: 20px; margin-right: 15px;">{{ post3.food }}</h3>
+                        <h4 style="color: white; display: inline-block; margin-left: 20px; margin-right: 15px;">Ingredients: </h4>
+                        <span style="color: white; ">{{ post3.foodie }}</span>
+                        <h4 style="color: white; margin-left: 20px; margin-right: 15px;">Prep Instructions: </h4>
+                        <p style="color: white; margin-left: 20px; margin-right: 15px;">{{ post3.bio }}</p><br>
+                        <button v-on:click="isHidden3=true" style="margin-bottom: 20px; margin-left: 20px; cursor: pointer">Close</button>
+                    </div>
+    
+                    <div class="post">
+                        <img v-on:click="isHidden4=false" src='images/banana.webp' alt="" style="cursor: pointer;">
+                        <span class="food">{{ post4.food }}</span> — 
+                        <span class="difficulty">{{ post4.difficulty }}</span>
+                        <span class="cooktime">- Total time: 20 mins</span>
+                        <p> {{ post4.message }} </p>
+                    </div>  
+                    <div v-if="!isHidden4" style="width: 30%; height: 70%; background-color: black; 
+                                                 border-radius: 15px; position: absolute; margin-left: 20%;
+                                                 margin-top: -400px;">
+                        <p v-on:click="isHidden4=true" style="text-align: right; cursor: pointer; color: white; margin-right: 10px;">x</p>
+                        <h3 style="color: white; margin-left: 20px; margin-right: 15px;">{{ post4.food }}</h3>
+                        <h4 style="color: white; display: inline-block; margin-left: 20px; margin-right: 15px;">Ingredients: </h4>
+                        <span style="color: white; ">{{ post4.foodie }}</span>
+                        <h4 style="color: white; margin-left: 20px; margin-right: 15px;">Prep Instructions: </h4>
+                        <p style="color: white; margin-left: 20px; margin-right: 15px;">{{ post4.bio }}</p><br>
+                        <button v-on:click="isHidden4=true" style="margin-bottom: 20px; margin-left: 20px; cursor: pointer">Close</button>
+                    </div>
+    
+                </section>
+    
+            </main>
+    
+        <footer>
+            &copy; Copyright RECIPE BLOG
+        </footer>
+        
+    </div>
+    
+    <script>
+        var blog = {
+            template: '<header><span>Food Blog</span></header>'
+        }
+    
+        var comments = {
+            template: '<h2>Comments</h2>'
+        }
+    
+        class Post {
+            constructor(food, difficulty, foodie, bio, message) {
+                // this.avatarPath = './images/profile.png';
+                this.food = food;
+                this.difficulty = difficulty;
+                this.message = message;
+                this.foodie = foodie;
+                this.bio = bio;
+            }
+        }
+    
+        var app1 = new Vue({
+            el: '#container',
+            data: {
+                post1: new Post('Broccoli Pesto Pasta', 'Beginner', 'Broccoli florets, Fresh basil,Fresh garlic, Pine nuts, Extra virgin olive oil, Parmigiano-Reggiano, and one secret ingredient: reserved pasta cooking water', '1. Prep all of your broccoli pesto ingredients—rinse the basil leaves, grate your Parmigiano, peel your garlic. 2. Bring a big pot of salted water to a boil. 3. Boil the broccoli. After two minutes, remove the florets, and add your pasta. 4. While the pasta cooks, make the pesto! Blend the broccoli, basil, garlic, pine nuts, extra virgin olive oil, salt and parmigiano reggiano until it’s nice and smooth. 5. When the pasta is done, scoop out a cup of that liquid gold (aka pasta water) and add it slowly to the pesto as you blend it a bit more. 6. Toss the pasta with the broccoli pesto and dig in!', 'This is a fast and easy pasta to make when you get home after a long day of work!'),
+                post2: new Post('Avocado Deviled Eggs', 'Intermediate', 'Hard Boiled Eggs, Avocados, Garlic Powder, Lime Juice, Kosher Salt, Pepper, Paprika and Chopped Cilantro', '1. Cut hard-boiled eggs in half and gently scoop yolks into a food processor. Set the sliced egg whites aside for later 2. Cut and scoop the avocados into the food processor with the egg yolks. Add the garlic powder, and salt and pepper. Blend until smooth. You can also mix the ingredients by hand using a fork for a more textured filling 3. Adjust seasonings if needed. Scoop mixture into a piping bag, or a plastic bag, and snip off one corner. Pipe the filling into the eggs 4. Garnish with a sprinkle of paprika and chopped cilantro. Serve right away, or cover and refrigerate until ready to serve', 'This is a little difficult to make but a great snack for a party or even Christmas movie time with that special someone!'),
+                post3: new Post('Bacon-Wrapped Pesto Pork Tenderloin', 'Advanced', 'Pepper, Prepared pesto, Shredded Italian cheese blend, Fresh baby spinach', '1. Preheat oven to 425°. Arrange bacon strips lengthwise in a foil-lined 15x10x1-in. pan, overlapping slightly 2. Cut tenderloin lengthwise through the center to within 1/2 in. of bottom. Open tenderloin flat; pound with a meat mallet to 1/2-in. thickness. Place tenderloin on center of bacon, perpendicular to strips 3. Sprinkle pepper over pork. Spread with pesto; layer with cheese and spinach. Close tenderloin; wrap with bacon, overlapping ends. Tie with kitchen string at 3-in. intervals. Secure ends with toothpicks 4. In a 12-in. skillet, brown roast on all sides, about 8 minutes. Return to baking pan; roast in oven until a thermometer inserted in pork reads 145°, 17-20 minutes. Remove string and toothpicks; let stand 5 minutes before slicing', 'This one takes skill and percision to make! But if you want to impress your significant other and make them feel extra special, you should definitely give this one a shot!'),
+                post4: new Post('Bananas Foster', 'Intermediate', '¼ cup butter, ⅔ cup dark brown sugar, 3 ½ tablespoons rum, 1 ½ teaspoons vanilla extract, ½ teaspoon ground cinnamon, 3 bananas, peeled and sliced lengthwise and crosswise, ¼ cup coarsely chopped walnuts, 1 pint vanilla ice cream', '1. Melt butter in a large, deep skillet over medium heat. Stir in brown sugar, rum, vanilla, and cinnamon; bring to a low boil 2. Place bananas and walnuts in the pan. Cook until bananas have softened, 1 to 2 minutes 3. Serve at once over vanilla ice cream.', 'This recipe is phenomenal! Definitely my favorite dessert to make! It just melts in your mouth!'),
+                isHidden1: true,
+                isHidden2: true,
+                isHidden3: true,
+                isHidden4: true,
+            },
+        });
+    
+     
+    
+    </script>
+    
     </body>
+    </html>
