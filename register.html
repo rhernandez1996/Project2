@@ -3,7 +3,21 @@
     <head>
         <title>Home</title>
         <!-- add link here -->
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/register.css">
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const info = urlParams.get('info');
+            if(info) {
+                const errorMessage = document.getElementById("error-message");
+                errorMessage.innerText = info;
+                errorMessage.style.display = "block";
+            };
+           
+              function myFunction() {
+                window.location.href="complete.";  
+              }
+           
+          </script>
     </head>
     <body id="home">
         <header id="header">
@@ -21,9 +35,23 @@
                 </nav>
             </div>
         </header>
+        <div id="pic">
+            <img src="images/download.jfif" alt="Pineapple" width="100%">
+        </div>
 
   <main>
-   
+            <form class="form-registration" action="." method="POST">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name"/>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"/>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username"/>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password"/>
+              <div id="button" required=""><a href="complete.html">Submit</a></div>
+            </form>
+          </section>
   </main>
         <footer class="site-footer">
             <div id="nondisclaimer"><div class="copy">&copy;

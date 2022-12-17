@@ -58,62 +58,16 @@ header {
   color: $color-secondary;
 }
 //end of header for pages
-
-/*main*/
-* {
-  font-family:$body-font;
-}
-
-#container {
-  position: absolute;
-  top: 15%;
-  left: 15%;
-  min-width: 1100px;
-  min-height: 1050px;
-  border-radius: 0.7em;
-  background-color: transparent;
-}
-
-main {
-  position: relative;
-}
-
-main #photos img {
-  margin: 0.75em;
-}
-section#blogposts {
-  /* position: absolute; */
-  display: flexbox;
-  flex-direction: column;
-  left: 20%;
-  top: 70px;
-  padding: 50px;
-}
-main .post {
-  margin: 25px;
-  padding: 25px;
-  border: 2px solid rgba(83, 78, 58, 0.6);
-  border-radius: 0.5em;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  text-align: center;
-  font-size: 0.85em;
-}
-/* avatar image */
 img {
-  width: 8%; 
-  height: 10%;
+    height: 500px;
+    width: auto;
+    margin-top: ;
 }
-
 //footer
 .site-footer {
-  background-image: linear-gradient(#800000, #a7f707);
-  color: aliceblue;
-  padding: 20px 0;
-  margin-top: 80px;
-  text-align: center;
-}
+    background-image: linear-gradient(#800000, #a7f707);
+    color: aliceblue;
+    padding: 20px 0;
+    margin-top: 80px;
+    text-align: center;
+  }
