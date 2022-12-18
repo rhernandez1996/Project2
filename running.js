@@ -15,3 +15,7 @@ const app = mongoose.model('App', run);
 const running = new app({ name: 'App is running!' });
 console.log(running.name); 
 });
+
+//demonstrating mongoose
+
+//to run it:   node running.js
